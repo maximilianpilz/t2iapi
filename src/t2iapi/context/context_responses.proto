@@ -1,11 +1,11 @@
 /*
 This Source Code Form is subject to the terms of the MIT License.
-Copyright (c) 2022 Draegerwerk AG & Co. KGaA.
+Copyright (c) 2022-2024 Draegerwerk AG & Co. KGaA.
 
 SPDX-License-Identifier: MIT
 */
 
-syntax = "proto3";
+edition = "2023";
 
 package t2iapi.context;
 
@@ -13,6 +13,7 @@ import "t2iapi/basic_responses.proto";
 import "t2iapi/response_types.proto";
 import "t2iapi/context/types.proto";
 
+option features.field_presence = IMPLICIT;
 option java_package = "com.draeger.medical.t2iapi.context";
 option java_outer_classname = "ContextResponses";
 

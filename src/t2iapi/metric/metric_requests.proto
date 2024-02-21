@@ -1,17 +1,18 @@
 /*
 This Source Code Form is subject to the terms of the MIT License.
-Copyright (c) 2022 Draegerwerk AG & Co. KGaA.
+Copyright (c) 2022-2024 Draegerwerk AG & Co. KGaA.
 
 SPDX-License-Identifier: MIT
 */
 
-syntax = "proto3";
+edition = "2023";
 
 package t2iapi.metric;
 
 import "t2iapi/activation_state/types.proto";
 import "t2iapi/metric/types.proto";
 
+option features.field_presence = IMPLICIT;
 option java_package = "com.draeger.medical.t2iapi.metric";
 option java_outer_classname = "MetricRequests";
 

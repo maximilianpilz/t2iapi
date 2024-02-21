@@ -5,7 +5,7 @@ Copyright (c) 2023 Draegerwerk AG & Co. KGaA.
 SPDX-License-Identifier: MIT
 */
 
-syntax = "proto3";
+edition = "2023";
 
 package t2iapi.combined;
 

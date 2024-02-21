@@ -5,7 +5,7 @@ Copyright (c) 2023 Draegerwerk AG & Co. KGaA.
 SPDX-License-Identifier: MIT
 */
 
-syntax = "proto3";
+edition = "2023";
 
 package t2iapi.combined;
 
@@ -14,7 +14,7 @@ import "t2iapi/operation/types.proto";
 import "t2iapi/activation_state/types.proto";
 import "t2iapi/metric/types.proto";
 
-
+option features.field_presence = IMPLICIT;
 option java_package = "com.draeger.medical.t2iapi.combined";
 option java_outer_classname = "CombinedRequests";
 
